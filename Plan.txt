@@ -1,0 +1,28 @@
+﻿-Set up a Button and Text box for ease of use later
+-Set up a text file whith the short forms typed out and translated
+-Set up a vairables in two seperate arrays to find the Short form then translate it to the code,
+- This will look like this:
+
+string[] ShortForm;
+string[] TranslatedText;
+ShortForm = new string[1];
+TranslatedText = new string[1];
+ShortForm[0] = "TTYL";
+TranslatedText[0] = "talk to you later";
+ShortForm[1] = "CCC";
+TranslatedText[1] = "Canadian Computing Competition";
+
+for (int i = 0; i < ShortForm.Length; i++)
+{
+ MessageBox.Show (TranslatedText[i]);
+}
+
+-Add a if statement inside the for loop to stop it after reading the first value correctly
+-Like so:
+
+if (ShortForm[i] == InputBox.Text)
+                {
+                    MessageBox.Show(TranslatedText[i]);
+                }
+
+-Set it to stop after finding TTYL, only reading the array numbers for the Values that have been typed
